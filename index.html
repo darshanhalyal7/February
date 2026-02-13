@@ -4,14 +4,29 @@
   <meta charset="UTF-8" />
   <title>Hey ❤️</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <button type="button" id="musicToggle" class="music-toggle" aria-label="Toggle music">
+    <span class="music-icon playing">🔊</span>
+    <span class="music-icon muted">🔇</span>
+  </button>
+  <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle day/night mode">
+    <span class="theme-icon sun">☀️</span>
+    <span class="theme-icon moon">🌙</span>
+  </button>
+
+  <div id="cursorHearts" class="cursor-hearts" aria-hidden="true"></div>
+  <div class="hearts-bg" aria-hidden="true"></div>
+
   <div class="card">
-    <h1>Hey my love 💕</h1>
-    <p>
+    <h1>Hey Divz 💕</h1>
+    <p class="intro">
       Every day with you is my favorite,<br />
-      but I was wondering something special…
+      but I was wondering something special…  
     </p>
 
     <h2>Will you be my Valentine? 💘</h2>
@@ -23,6 +38,8 @@
 
     <p id="response"></p>
   </div>
+
+  <div id="confetti"></div>
 
   <script src="script.js"></script>
 </body>
